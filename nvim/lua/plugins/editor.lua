@@ -15,7 +15,7 @@ return {
 
   {
     "echasnovski/mini.hipatterns",
-    event = "BufReadPre",
+    event = { "BufReadPre", "BufNewFile" },
     opts = {
       highlighters = {
         hsl_color = {

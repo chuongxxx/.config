@@ -106,22 +106,6 @@ return {
     end,
   },
 
-  -- or you can return new options to override all the defaults
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = function()
-      return {
-        --[[add your custom lualine config here]]
-      }
-    end,
-  },
-
-  -- use mini.starter instead of alpha
-
-  -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
-
-  -- Use <tab> for completion and snippets (supertab)
   -- first: disable default <tab> and <s-tab> behavior in LuaSnip
   {
     "L3MON4D3/LuaSnip",
