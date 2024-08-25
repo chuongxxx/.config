@@ -20,12 +20,23 @@ return {
     opts = {
       servers = {
         tsserver = {
-          init_options = {
-            hostInfo = "neovim",
-            preferences = {
-              includeCompletionsForModuleExports = true,
-              includeCompletionsForImportStatements = true,
-              importModuleSpecifierPreference = "relative",
+          enabled = false,
+          -- init_options = {
+          --   hostInfo = "neovim",
+          --   preferences = {
+          --     includeCompletionsForModuleExports = true,
+          --     includeCompletionsForImportStatements = true,
+          --     importModuleSpecifierPreference = "relative",
+          --   },
+          -- },
+        },
+
+        vtsls = {
+          settings = {
+            typescript = {
+              preferences = {
+                importModuleSpecifier = "relative",
+              },
             },
           },
         },
